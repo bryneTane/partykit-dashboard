@@ -1,0 +1,12 @@
+{
+  "environments": {
+    "local": { "host": "localhost:1999", "publishSecretEnv": "PUBLISH_SECRET" },
+    "prod-demo": { "host": "localhost:1999", "publishSecretEnv": "PUBLISH_SECRET", "prod": true },
+    "broken": { "host": "localhost:1999", "secretEnv": "MISSING_SECRET" },
+    "offline": { "host": "localhost:1" }
+  },
+  "presets": [
+    { "name": "hello", "body": { "status": "hello" } },
+    { "name": "done", "body": { "status": "done", "note": "sent from the dashboard" } }
+  ]
+}

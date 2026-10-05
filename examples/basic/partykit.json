@@ -1,0 +1,11 @@
+{
+  "$schema": "https://www.partykit.io/schema.json",
+  "name": "partykit-dashboard-example",
+  "main": "src/room.ts",
+  "compatibilityDate": "2024-09-23",
+  "parties": {
+    "dashboard_registry": "src/registry.ts",
+    "control": "src/control.ts",
+    "small": "src/small.ts"
+  }
+}

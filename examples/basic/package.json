@@ -1,0 +1,21 @@
+{
+  "name": "partykit-dashboard-example-basic",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "partykit dev",
+    "deploy": "partykit deploy",
+    "demo": "node scripts/demo.mjs",
+    "typecheck": "tsc --noEmit",
+    "predev": "npm run build -w partykit-dashboard",
+    "dashboard": "partykit-dashboard"
+  },
+  "dependencies": {
+    "partykit-dashboard": "*"
+  },
+  "devDependencies": {
+    "partykit": "0.0.115",
+    "typescript": "^5"
+  }
+}
